@@ -117,6 +117,29 @@ Ensures safe data management and platform integrity.
 Below is a visual representation of how the backend modules interact within the Airbnb Clone system.
 
 ### 🖼️ Diagram
-*(Insert your exported PNG file from Draw.io here)*
+
+---
+
+## 🧩 11. Technical Stack
+- **Backend Framework:** Django / Django REST Framework  
+- **Database:** PostgreSQL  
+- **Authentication:** JWT, OAuth  
+- **Storage:** AWS S3 / Cloudinary  
+- **Payments:** Stripe / PayPal  
+- **Caching & Queueing:** Redis, Celery  
+- **Testing:** Pytest  
+- **CI/CD:** GitHub Actions  
+- **Deployment:** Docker + Render / AWS / Heroku  
+
+---
+
+## 🧾 Summary
+This document outlines the **core backend modules** that power the Airbnb Clone system.  
+Together, these features ensure that the application remains **user-friendly, reliable, secure, and scalable** — reflecting real-world production-grade backend development principles.
+
+---
+
+**#ALX_SE #ALX_PDBE #AirbnbClone #BackendDevelopment @alx_africa**
+
 
 Example file:  
