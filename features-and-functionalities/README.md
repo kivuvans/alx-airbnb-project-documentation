@@ -120,26 +120,35 @@ Below is a visual representation of how the backend modules interact within the 
 
 ---
 
-## 🧩 11. Technical Stack
-- **Backend Framework:** Django / Django REST Framework  
-- **Database:** PostgreSQL  
-- **Authentication:** JWT, OAuth  
-- **Storage:** AWS S3 / Cloudinary  
-- **Payments:** Stripe / PayPal  
-- **Caching & Queueing:** Redis, Celery  
-- **Testing:** Pytest  
-- **CI/CD:** GitHub Actions  
-- **Deployment:** Docker + Render / AWS / Heroku  
+                ┌──────────────────────────┐
+                │        Admin Panel       │
+                └────────────┬─────────────┘
+                             │
+                             │ manages / monitors
+                             ▼
+ ┌──────────────┐     ┌──────────────┐     ┌─────────────────┐
+ │  User Module │<--->│ Booking &    │<--->│ Payment Module  │
+ │ (Guest/Host) │     │ Reservation  │     └─────────────────┘
+ └──────┬───────┘     │ Management   │
+        │              └──────────────┘
+        │ interacts
+        ▼
+ ┌────────────────┐
+ │ Property Module│
+ │ (Listings)     │
+ └──────┬─────────┘
+        │ linked to
+        ▼
+ ┌────────────────┐
+ │ Review Module  │
+ └────────────────┘
+        │
+        ▼
+ ┌────────────────┐
+ │ Notification   │
+ │ & Messaging    │
+ └────────────────┘
 
----
-
-## 🧾 Summary
-This document outlines the **core backend modules** that power the Airbnb Clone system.  
-Together, these features ensure that the application remains **user-friendly, reliable, secure, and scalable** — reflecting real-world production-grade backend development principles.
-
----
-
-**#ALX_SE #ALX_PDBE #AirbnbClone #BackendDevelopment @alx_africa**
 
 
 Example file:  
