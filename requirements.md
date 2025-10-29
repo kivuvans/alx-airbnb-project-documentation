@@ -37,3 +37,11 @@ Enables users to create and manage accounts securely. Users can sign up as **hos
   "role": "host"
 }
 
+**Output:**
+{
+  "message": "User registered successfully",
+  "user_id": "uuid",
+  "role": "host",
+  "token": "jwt_token"
+}
+
